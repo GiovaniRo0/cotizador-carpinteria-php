@@ -1,0 +1,172 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background: linear-gradient(135deg, #2C3E50, #34495E);
+    font-family: 'Poppins', sans-serif;
+    padding: 20px;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 30px;
+    width: 100%;
+    max-width: 800px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.container-glass {
+    max-height: 80vh;
+    overflow-y: auto;
+    padding-right: 10px;
+}
+
+/* Scrollbar personalizada */
+.container-glass::-webkit-scrollbar {
+    width: 8px;
+}
+
+.container-glass::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+}
+
+.container-glass::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+}
+
+.container-glass::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.form-section {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 25px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.form-section h4 {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    padding-bottom: 12px;
+    margin-bottom: 20px;
+    color: white;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+}
+
+.form-section h4 i {
+    margin-right: 10px;
+    font-size: 1.1em;
+}
+
+.form-label {
+    color: rgba(255, 255, 255, 0.8);
+    font-weight: 300;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.form-control {
+    background: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: white;
+    transition: all 0.3s ease;
+    padding: 10px 15px;
+    height: auto;
+}
+
+.form-control:focus {
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 0 0 0.25rem rgba(52, 152, 219, 0.15);
+    border-color: rgba(255, 255, 255, 0.4);
+    color: white;
+}
+
+.form-control::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+    font-weight: 300;
+}
+
+.btn-croma {
+    background: linear-gradient(135deg, #3498DB, #2C3E50);
+    border: none;
+    color: white;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(52, 152, 219, 0.3);
+    padding: 12px;
+    border-radius: 8px;
+    letter-spacing: 0.5px;
+}
+
+.btn-croma:hover {
+    background: linear-gradient(135deg, #2C3E50, #3498DB);
+    box-shadow: 0 6px 12px rgba(52, 152, 219, 0.4);
+    transform: translateY(-2px);
+}
+
+.btn-croma:active {
+    transform: translateY(0);
+}
+
+h2 {
+    color: white;
+    font-weight: 600;
+    margin-bottom: 25px;
+    text-align: center;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background: linear-gradient(to right, #3498DB, transparent);
+    border-radius: 3px;
+}
+
+.text-white-50 {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+a {
+    color: #3498DB;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #5DADE2;
+    text-decoration: underline;
+}
+
+.alert {
+    border-radius: 8px;
+    padding: 12px 15px;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+        max-width: 95%;
+    }
+    
+    .form-section {
+        padding: 15px;
+    }
+}
